@@ -4,10 +4,8 @@
   ...
 }:
 {
-
   programs.fish = with pkgs; {
     enable = true;
-
     functions = {
       gitignore = "curl -sL https://www.gitignore.io/api/$argv";
       fish_greeting = ""; # disable welcome text

@@ -3,6 +3,7 @@
   imports = [
     ./openssh.nix
     ./matrix.nix
+    ./nginx.nix
   ];
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
@@ -18,8 +19,10 @@
     ]))
     ffmpeg
     screen
+    rocksdb
     tmux
     wget
+    matrix-conduit
   ];
 
   programs.fish.enable = true;

@@ -2,6 +2,8 @@
   imports = [
     ./fish
     ./environments
+    ./ssh
+    ./gpg
     ./git
     ./bash
     ./neovim

@@ -24,12 +24,15 @@
   networking.nameservers = [
     "8.8.8.8"
   ];
-
   networking.firewall.allowedTCPPorts = [
     80
     443
-    6099
+    8448
     2222
-    8008
+  ];
+  networking.firewall.allowedUDPPorts = [
+    80
+    443
+    8448
   ];
 }
