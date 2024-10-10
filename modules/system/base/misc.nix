@@ -1,3 +1,4 @@
+{ pkgs, ... }:
 {
   documentation = {
     enable = false;
