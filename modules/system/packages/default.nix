@@ -2,6 +2,7 @@
 {
   imports = [
     ./openssh.nix
+    ./matrix.nix
   ];
   nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
