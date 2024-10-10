@@ -3,7 +3,7 @@
   imports = [
     ./openssh.nix
   ];
-
+  nixpkgs.config.allowUnfree = true;
   environment.systemPackages = with pkgs; [
     neovim
     killall
@@ -16,6 +16,8 @@
       python-pkgs.numpy
     ]))
     ffmpeg
+    screen
+    tmux
     wget
   ];
 

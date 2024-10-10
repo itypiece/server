@@ -6,6 +6,7 @@
       "/var/lib"
       "/var/log"
       "/etc/nixos"
+      "/etc/ssh"
     ];
     files = [ "/etc/machine-id" ];
     users.alice = {
@@ -19,6 +20,7 @@
         ".local"
         ".config"
         ".ssh"
+        ".cache"
         ".gnupg"
       ];
     };

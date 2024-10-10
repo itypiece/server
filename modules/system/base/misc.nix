@@ -9,6 +9,7 @@
   };
 
   users.mutableUsers = false;
-
+  programs.command-not-found.enable = false;
   system.stateVersion = "24.11";
+
 }

@@ -4,6 +4,7 @@
   ...
 }:
 {
+
   programs.fish = with pkgs; {
     enable = true;
 
@@ -13,6 +14,7 @@
     };
     shellAliases = {
       "osclean" = "sudo nix profile wipe-history --profile /nix/var/nix/profiles/system && sudo nix store gc --debug";
+      "osbuild" = "sudo nixos-rebuild switch --flake ~/projects/server/#alice";
     };
 
     interactiveShellInit = ''
